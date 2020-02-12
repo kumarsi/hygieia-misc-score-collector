@@ -113,7 +113,7 @@ score.qualityWidget.criteria.noDataFound.scoreValue=0
 score.qualityWidget.criteria.noDataFound.propagate=no
 
 # Code Quality widget criteria settings
-score.qualityWidget.codeCoverage.weight=50
+score.qualityWidget.codeCoverage.weight=100
 score.qualityWidget.codeCoverage.disabled=false
 score.qualityWidget.codeCoverage.criteria.noDataFound.scoreType=zero_score
 score.qualityWidget.codeCoverage.criteria.noDataFound.scoreValue=0
@@ -123,9 +123,9 @@ score.qualityWidget.codeCoverage.criteria.noDataFound.propagate=widget
 # Unit Tests widget criteria settings
 score.qualityWidget.unitTests.weight=50
 score.qualityWidget.unitTests.disabled=false
-score.qualityWidget.unitTests.criteria.noDataFound.scoreType=zero_score
+score.qualityWidget.unitTests.criteria.noDataFound.scoreType=no_score
 score.qualityWidget.unitTests.criteria.noDataFound.scoreValue=0
-score.qualityWidget.unitTests.criteria.noDataFound.propagate=widget
+score.qualityWidget.unitTests.criteria.noDataFound.propagate=no
 score.qualityWidget.unitTests.criteria.dataRangeThresholds[0].type=percent
 score.qualityWidget.unitTests.criteria.dataRangeThresholds[0].comparator=less
 score.qualityWidget.unitTests.criteria.dataRangeThresholds[0].value=100
