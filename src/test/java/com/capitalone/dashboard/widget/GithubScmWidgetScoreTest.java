@@ -66,7 +66,7 @@ public class GithubScmWidgetScoreTest {
     ScoreWeight scoreWeight = githubScmWidgetScore.processWidgetScore(githubWidget, scmScoreSettings);
 
     LOGGER.info("scoreWeight {}", scoreWeight);
-    assertThat(Utils.roundAlloc(scoreWeight.getScore().getScoreValue()), is("71.4"));
+    assertThat(Utils.roundAlloc(scoreWeight.getScore().getScoreValue()), is("100"));
 
   }
 
@@ -93,7 +93,7 @@ public class GithubScmWidgetScoreTest {
     ScoreWeight scoreWeight = githubScmWidgetScore.processWidgetScore(githubWidget, scmScoreSettings);
 
     LOGGER.info("scoreWeight {}", scoreWeight);
-    assertThat(scoreWeight.getScore().getScoreType(), is(ScoreType.zero_score));
+    assertThat(scoreWeight.getScore().getScoreType(), is(ScoreType.value_percent));
   }
 
 
@@ -120,7 +120,7 @@ public class GithubScmWidgetScoreTest {
     ScoreWeight scoreWeight = githubScmWidgetScore.processWidgetScore(githubWidget, scmScoreSettings);
 
     LOGGER.info("scoreWeight {}", scoreWeight);
-    assertThat(Utils.roundAlloc(scoreWeight.getScore().getScoreValue()), is("71.4"));
+    assertThat(Utils.roundAlloc(scoreWeight.getScore().getScoreValue()), is("100"));
   }
 
 
@@ -128,7 +128,7 @@ public class GithubScmWidgetScoreTest {
 
   private ScmScoreSettings getGithubScmScoreSettingsNoThreshold() {
     ScmScoreSettings scmScoreSettings = new ScmScoreSettings();
-    scmScoreSettings.setNumberOfDays(14);
+    scmScoreSettings.setNumberOfDays(10);
     scmScoreSettings.setWeight(33);
 
     ScoreComponentSettings daysWithCommits = new ScoreComponentSettings();
@@ -140,7 +140,7 @@ public class GithubScmWidgetScoreTest {
 
   private ScmScoreSettings getGithubScmScoreSettingsWithThreshold(Double thresholdValue) {
     ScmScoreSettings scmScoreSettings = new ScmScoreSettings();
-    scmScoreSettings.setNumberOfDays(14);
+    scmScoreSettings.setNumberOfDays(10);
     scmScoreSettings.setWeight(33);
 
     ScoreCriteria criteria = new ScoreCriteria();
