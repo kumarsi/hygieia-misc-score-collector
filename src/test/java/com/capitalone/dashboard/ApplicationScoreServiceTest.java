@@ -54,7 +54,7 @@ public class ApplicationScoreServiceTest {
 
   private BuildScoreSettings getBuildScoreSettingsNoThreshold() {
     BuildScoreSettings buildScoreSettings = new BuildScoreSettings();
-    buildScoreSettings.setNumberOfDays(14);
+    buildScoreSettings.setNumberOfDays(10);
     buildScoreSettings.setWeight(25);
 
     ScoreCriteria criteria = new ScoreCriteria();

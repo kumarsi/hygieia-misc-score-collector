@@ -16,7 +16,7 @@ score.criteria.noDataFound.scoreType=zero_score
 score.scmWidget.weight=25
 score.scmWidget.disabled=false
 #Number of days for commits
-score.scmWidget.numberOfDays=14
+score.scmWidget.numberOfDays=10
 
 #Add threshold criteria to check if there is no commit in last 7 days, set score as 0
 score.scmWidget.criteria.dataRangeThresholds[0].type=days
@@ -35,7 +35,7 @@ score.scmWidget.criteria.dataRangeThresholds[1].score.propagate=no
 
 # Commits per day widget criteria settings
 score.scmWidget.commitsPerDay.weight=100
-score.scmWidget.commitsPerDay.numberOfDays=14
+score.scmWidget.commitsPerDay.numberOfDays=10
 
 
 #Add threshold criteria to check if there are more than 60% commits present, set score as 100
@@ -46,7 +46,7 @@ score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].score.scoreType=va
 score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].score.scoreValue=100
 score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].score.propagate=no
 
-score.buildWidget.numberOfDays=14
+score.buildWidget.numberOfDays=10
 score.buildWidget.weight=25
 
 #Add threshold criteria to check if there is no build in last 7 days, set score as 0

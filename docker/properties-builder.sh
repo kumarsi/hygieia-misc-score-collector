@@ -47,7 +47,7 @@ score.criteria.noDataFound.scoreValue=0
 
 # Score settings for build widget
 # Number of days to calculate score
-score.buildWidget.numberOfDays=14
+score.buildWidget.numberOfDays=10
 # Weight for the widget
 score.buildWidget.weight=25
 # If widget is disabled it will not be used for calculating score
@@ -163,7 +163,7 @@ score.deployWidget.intancesOnline.criteria.noDataFound.propagate=widget
 # Score settings for github scm widget
 score.scmWidget.weight=25
 score.scmWidget.disabled=false
-score.scmWidget.numberOfDays=14
+score.scmWidget.numberOfDays=10
 
 score.scmWidget.criteria.noWidgetFound.scoreType=zero_score
 score.scmWidget.criteria.noWidgetFound.scoreValue=0
@@ -190,7 +190,7 @@ score.scmWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
 
 # Commits per day widget criteria settings
 score.scmWidget.commitsPerDay.weight=100
-score.scmWidget.commitsPerDay.numberOfDays=14
+score.scmWidget.commitsPerDay.numberOfDays=10
 score.scmWidget.commitsPerDay.disabled=false
 score.scmWidget.commitsPerDay.criteria.noDataFound.scoreType=zero_score
 score.scmWidget.commitsPerDay.criteria.noDataFound.scoreValue=0

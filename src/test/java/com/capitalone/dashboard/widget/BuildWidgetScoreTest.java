@@ -144,7 +144,7 @@ public class BuildWidgetScoreTest {
 
   private BuildScoreSettings getBuildScoreSettingsNoThreshold() {
     BuildScoreSettings buildScoreSettings = new BuildScoreSettings();
-    buildScoreSettings.setNumberOfDays(14);
+    buildScoreSettings.setNumberOfDays(10);
     buildScoreSettings.setWeight(33);
 
     ScoreComponentSettings statusSettings = new ScoreComponentSettings();
@@ -165,7 +165,7 @@ public class BuildWidgetScoreTest {
 
   private BuildScoreSettings getBuildScoreSettingsWithThreshold(Double thresholdValue) {
     BuildScoreSettings buildScoreSettings = new BuildScoreSettings();
-    buildScoreSettings.setNumberOfDays(14);
+    buildScoreSettings.setNumberOfDays(10);
     buildScoreSettings.setWeight(33);
 
     ScoreCriteria criteria = new ScoreCriteria();
