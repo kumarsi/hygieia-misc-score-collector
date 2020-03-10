@@ -22,7 +22,7 @@ score.scmWidget.numberOfDays=10
 score.scmWidget.criteria.dataRangeThresholds[0].type=days
 score.scmWidget.criteria.dataRangeThresholds[0].comparator=equals
 score.scmWidget.criteria.dataRangeThresholds[0].value=0
-score.scmWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
+#score.scmWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
 score.scmWidget.criteria.dataRangeThresholds[0].score.scoreType=zero_score
 score.scmWidget.criteria.dataRangeThresholds[0].score.propagate=no
 
@@ -53,7 +53,7 @@ score.buildWidget.weight=25
 score.buildWidget.criteria.dataRangeThresholds[0].type=days
 score.buildWidget.criteria.dataRangeThresholds[0].comparator=equals
 score.buildWidget.criteria.dataRangeThresholds[0].value=0
-score.buildWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
+#score.buildWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
 score.buildWidget.criteria.dataRangeThresholds[0].score.scoreType=zero_score
 score.buildWidget.criteria.dataRangeThresholds[0].score.propagate=no
 

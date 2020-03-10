@@ -141,11 +141,6 @@ public class GithubScmWidgetScore extends WidgetScoreAbstract {
     ThresholdUtils.sortByValueType(thresholdSettings);
     List<Long> commitTimestamps = getCommitTimestamps(commits);
     List<ScoreThresholdSettings> percentThresholds = ThresholdUtils.findAllPercentThresholds(thresholdSettings);
-    if (CollectionUtils.isNotEmpty(percentThresholds)) {
-      //Check if it meets the first threshold, and return with Score zero or valuePercent Or throw noscoreexeption
-      ThresholdUtils.checkPercentThresholds(percentThresholds, commitTimestamps, numberOfDays);
-
-    }
 
     List<ScoreThresholdSettings> daysThresholds = ThresholdUtils.findAllDaysThresholds(thresholdSettings);
     if (CollectionUtils.isNotEmpty(daysThresholds)) {

@@ -81,26 +81,6 @@ public class ThresholdUtils {
     }
   }
 
-  public static void checkPercentThresholds(
-    List<ScoreThresholdSettings> percentThresholds,
-    List<Long> timestamps,
-    int days)
-    throws ThresholdException {
-    for (ScoreThresholdSettings percentThreshold : percentThresholds) {
-      Integer numDaysToCheck = percentThreshold.getNumDaysToCheck();
-      int checkLastDays = (null != numDaysToCheck) ? numDaysToCheck : days;
-      Double coveragePercent = getPercentCoverage(timestamps, checkLastDays, days);
-      ScoreTypeValue scoreTypeValue = getScoreForThreshold(percentThreshold, coveragePercent.compareTo(percentThreshold.getValue()));
-      if (null != scoreTypeValue) {
-        throw new ThresholdException(
-          getThresholdFailureMessage(percentThreshold, checkLastDays),
-          scoreTypeValue
-        );
-      }
-    }
-  }
-
-
   public static void checkDaysThresholds(
     List<ScoreThresholdSettings> daysThresholds,
     List<Long> timestamps,
