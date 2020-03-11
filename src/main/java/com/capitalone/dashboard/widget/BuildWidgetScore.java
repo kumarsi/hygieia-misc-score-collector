@@ -169,11 +169,6 @@ public class BuildWidgetScore extends WidgetScoreAbstract {
     ThresholdUtils.sortByValueType(thresholdSettings);
     List<Long> buildTimestamps = getBuildTimestamps(builds);
     List<ScoreThresholdSettings> percentThresholds = ThresholdUtils.findAllPercentThresholds(thresholdSettings);
-    if (CollectionUtils.isNotEmpty(percentThresholds)) {
-      //Check if it meets the first threshold, and return with Score zero or value_percent Or throw noscoreexeption
-      ThresholdUtils.checkPercentThresholds(percentThresholds, buildTimestamps, buildScoreSettings.getNumberOfDays());
-
-    }
 
     List<ScoreThresholdSettings> daysThresholds = ThresholdUtils.findAllDaysThresholds(thresholdSettings);
     if (CollectionUtils.isNotEmpty(daysThresholds)) {

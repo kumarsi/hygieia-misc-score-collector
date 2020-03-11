@@ -89,7 +89,7 @@ score.buildWidget.criteria.dataRangeThresholds[0].score.scoreValue=0
 score.buildWidget.criteria.dataRangeThresholds[0].score.propagate=no
 
 # we can set the last n number of days to check for threshold (Not Mandatory)
-score.buildWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
+#score.buildWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
 
 # Build duration within threshold score settings
 score.buildWidget.duration.buildDurationThresholdInMillis=300000
@@ -185,7 +185,7 @@ score.scmWidget.criteria.dataRangeThresholds[0].score.scoreValue=0
 score.scmWidget.criteria.dataRangeThresholds[0].score.propagate=no
 
 # we can set the last n number of days to check for threshold (Not Mandatory)
-score.scmWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
+#score.scmWidget.criteria.dataRangeThresholds[0].numDaysToCheck=7
 
 
 # Commits per day widget criteria settings
@@ -203,7 +203,7 @@ score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].value=20
 score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].score.scoreType=zero_score
 score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].score.scoreValue=0
 score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].score.propagate=widget
-score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].numDaysToCheck=7
+#score.scmWidget.commitsPerDay.criteria.dataRangeThresholds[0].numDaysToCheck=7
 
 EOF
 
